@@ -1,5 +1,0 @@
-<resources>
-    <string name="app_name">DirectConnect</string>
-    <string name="WiFI_SSID">SSID:</string>
-    <string name="WiFi_IP">IP:</string>
-</resources>
