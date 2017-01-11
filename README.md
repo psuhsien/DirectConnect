@@ -1,8 +1,8 @@
-# Link-Together  
+# DirectConnect  
 
 TODO: Everything  
   Wifi Manager and WifiInfo [done]  
-  Study port 139?    
+  Study port 139?  
   ...  
 
 KNOWN:  
