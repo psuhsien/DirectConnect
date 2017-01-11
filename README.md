@@ -1,6 +1,9 @@
 # Link-Together  
 
 TODO: Everything  
-  Explorer WiFi on Android  
-  Android open port?  
+  Wifi Manager and WifiInfo [done]  
+  Study port 139?    
   ...  
+
+KNOWN:  
+  Windows file sharing using port 139 and 445
