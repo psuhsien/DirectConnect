@@ -10,21 +10,131 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="nocompanydomain.directconnect.MainActivity">
 
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/WiFi_SSID"
-        android:text="@string/WiFI_SSID"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/WiFi_SSID"
-        android:id="@+id/WiFi_IP"
-        android:text="@string/WiFi_IP"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/WiFi_IP"
-        android:id="@+id/TEST"
-        android:text="POI"/>
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/WiFi_SSID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/WiFI_SSID" />
+
+            <TextView
+                android:id="@+id/WiFi_IP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/WiFi_SSID"
+                android:text="@string/WiFi_IP" />
+
+            <TextView
+                android:id="@+id/hostnameIP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/WiFi_IP"
+                android:text="Hostname or IP:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/inputHostnameIP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hostnameIP"
+                android:hint="Enter hostname or IP"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inputHostnameIP"
+                android:text="username:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/inputUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/username"
+                android:hint="Enter username"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inputUsername"
+                android:text="password:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/inputPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/password"
+                android:hint="Enter password"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/path"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inputPassword"
+                android:text="path:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/inputPath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/path"
+                android:hint="Enter path"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/fileNameAndType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inputPath"
+                android:text="file name and type:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/inputFileNameAndType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fileNameAndType"
+                android:hint="Enter file name and type"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/overwrite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inputFileNameAndType"
+                android:text="overwrite:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/inputOverwrite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/overwrite"
+                android:hint="Enter overwite content"
+                android:textSize="14sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inputOverwrite"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:enabled="false"
+                android:text="execute" />
+        </RelativeLayout>
+    </ScrollView>
 </RelativeLayout>
